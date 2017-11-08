@@ -44,7 +44,7 @@ class Bot:
 
         @self.client.event
         async def on_message(message: Message):
-            async def process(name: str, handler):
+            async def process(call: str, args: str, name: str, handler):
                 match = True
                 if handler.is_command:
                     match = call == self.config.PREFIX + name
@@ -132,12 +132,12 @@ class Bot:
                 call = message.content
 
             for name, handler in self.box.handlers['message'].items():
-                res = await process(name, handler)
+                res = await process(call, args, name, handler)
                 if not res:
                     break
             for alias, name in self.box.aliases.items():
                 handler = self.box.handlers['message'][name]
-                res = await process(alias, handler)
+                res = await process(call, args, alias, handler)
                 if not res:
                     break
 
