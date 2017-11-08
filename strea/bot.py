@@ -122,7 +122,7 @@ class Bot:
 
                         if not res:
                             return False
-                    return True
+                return True
             print(message.content)
             call = ''
             args = ''
