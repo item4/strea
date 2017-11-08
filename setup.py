@@ -16,6 +16,8 @@ install_requires = {
     'Click >= 6.7',
     # Configuration
     'toml >= 0.9.3',
+    # i18n
+    'babel >= 2.5.1',
     # Fuzzy Search
     'fuzzywuzzy[speedup] >= 0.15.1',
     # util

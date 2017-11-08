@@ -67,24 +67,6 @@ def run(config):
     """Run YUI."""
 
     bot = Bot(config)
-
-    @bot.event
-    async def on_ready():
-        pass
-
-    @bot.event
-    async def on_message(message):
-        if message.content.startswith(f'{bot.config.PREFIX}캐뽑'):
-            await bot.client.send_message(
-                message.channel,
-                '캐릭터 뽑기 시뮬을 해볼까요? (사실은 구현 안 됨)'
-            )
-        if message.content.startswith(f'{bot.config.PREFIX}무뽑'):
-            await bot.client.send_message(
-                message.channel,
-                '무기 뽑기 시뮬을 해볼까요? (사실은 구현 안 됨)'
-            )
-
     bot.run()
 
 
