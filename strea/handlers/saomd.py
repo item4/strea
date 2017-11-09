@@ -383,9 +383,9 @@ async def saomd_character_scout(bot, message: Message, sess, title: str):
 
     await bot.say(
         message.channel,
-        ('{cost_type} {cost}개를 소모하여 {title} {step} {count}{c}차를 시도합니다.'
-         '\n\n{result}\n\n해방 결정을 {release_crystal}개'
-         '{record_crystal} 획득했습니다.').format(
+        ('{cost_type} {cost}개 써서 {title} {step} {count}{c}차를 해보자!'
+         '\n\n{result}\n\n해방 결정이 {release_crystal}개'
+         '{record_crystal} 생겼어!').format(
             cost_type=COST_TYPE_LABEL[step.cost_type],
             cost=step.cost,
             title=scout.title,
@@ -395,7 +395,7 @@ async def saomd_character_scout(bot, message: Message, sess, title: str):
             result='\n'.join(results),
             release_crystal=release_crystal,
             record_crystal=(
-                f', 기록결정 크리스탈을 {record_crystal}개'
+                f', 기록결정 크리스탈이 {record_crystal}개'
                 if record_crystal > 0 else ''
             ),
         )
@@ -436,7 +436,7 @@ async def saomd_weapon_scout(bot, message: Message, sess, title: str):
 
     await bot.say(
         message.channel,
-        ('{cost_type} {cost}개를 소모하여 {title} {step} {count}{c}차를 시도합니다.'
+        ('{cost_type} {cost}개 써서 {title} {step} {count}{c}차를 해보자!'
          '\n\n{result}\n\n{record_crystal}').format(
             cost_type=COST_TYPE_LABEL[step.cost_type],
             cost=step.cost,
@@ -446,7 +446,7 @@ async def saomd_weapon_scout(bot, message: Message, sess, title: str):
             c='연' if step.count > 1 else '단',
             result='\n'.join(results),
             record_crystal=(
-                f'기록결정 크리스탈을 {record_crystal}개 획득했습니다.'
+                f'기록결정 크리스탈이 {record_crystal}개 생겼어!'
                 if record_crystal > 0 else ''
             ),
         )
@@ -469,7 +469,7 @@ async def saomd_sim_result_reset(bot, message: Message, sess):
     except NoResultFound:
         await bot.say(
             message.channel,
-            '리셋할 데이터가 없어요!'
+            '리셋할 데이터가 없어!'
         )
         return
 
@@ -486,5 +486,5 @@ async def saomd_sim_result_reset(bot, message: Message, sess):
 
     await bot.say(
         message.channel,
-        '리셋했어요!'
+        '리셋했어!'
     )
