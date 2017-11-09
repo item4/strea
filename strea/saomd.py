@@ -1162,6 +1162,290 @@ def 폭풍에_휘날리는_해적기_스카우트_무기(sess):
         sess.add(step1)
 
 
+def 여름밤의_축제_스카우트_캐릭터(sess):
+    scout = Scout()
+    scout.title = '여름밤의 축제 스카우트'
+    scout.type = ScoutType.character
+    scout.s4_units = [
+        '[신락의 춤] 프리미어',
+        '[여름밤에 울리는 소리] 리파',
+        '[장사수완 좋은 노점상 리즈벳',
+    ]
+
+    step1 = Step()
+    step1.scout = scout
+    step1.name = '일반'
+    step1.is_first = True
+    step1.cost = 250
+    step1.cost_type = CostType.diamond
+
+    with sess.begin():
+        sess.add(scout)
+        sess.add(step1)
+
+
+def 여름밤의_축제_스카우트_무기(sess):
+    scout = Scout()
+    scout.title = '여름밤의 축제 스카우트'
+    scout.type = ScoutType.weapon
+    scout.s4_units = [
+        '천신의 폭풍검',
+        '풍차의 신검',
+        '보구의 신창',
+    ]
+
+    step1 = Step()
+    step1.scout = scout
+    step1.name = '일반'
+    step1.is_first = True
+    step1.cost = 150
+    step1.cost_type = CostType.diamond
+
+    with sess.begin():
+        sess.add(scout)
+        sess.add(step1)
+
+
+def 매력분출_여름빛_소녀_스카우트_캐릭터(sess):
+    scout = Scout()
+    scout.title = '매력분출 여름빛 소녀 스카우트'
+    scout.type = ScoutType.character
+    scout.s4_units = [
+        '[해바라기 여름 소녀] 시리카',
+        '[태양의 여름 소녀] 리즈벳',
+        '[장난스런 여름 소녀] 시논',
+        '[두근거리는 여름 처녀] 스구하',
+        '[치유의 여름 미인] 아스나',
+    ]
+
+    step1 = Step()
+    step1.scout = scout
+    step1.name = '일반'
+    step1.is_first = True
+    step1.cost = 250
+    step1.cost_type = CostType.diamond
+
+    with sess.begin():
+        sess.add(scout)
+        sess.add(step1)
+
+
+def 매력분출_여름빛_소녀_스카우트_무기(sess):
+    scout = Scout()
+    scout.title = '매력분출 여름빛 소녀 스카우트'
+    scout.type = ScoutType.weapon
+    scout.s4_units = [
+        '비치 버스터',
+        '선플라워 엣지',
+        '마린 샷',
+        '아일랜드 스피어',
+        '릴리 망고슈',
+    ]
+
+    step1 = Step()
+    step1.scout = scout
+    step1.name = '일반'
+    step1.is_first = True
+    step1.cost = 150
+    step1.cost_type = CostType.diamond
+
+    with sess.begin():
+        sess.add(scout)
+        sess.add(step1)
+
+
+def 유카타_NIGHT_스카우트_캐릭터(sess):
+    scout = Scout()
+    scout.title = '유카타 NIGHT 스카우트'
+    scout.type = ScoutType.character
+    scout.s4_units = [
+        '[여름 밤을 비추는 수양버들] 아스나',
+        '[탄도에 피는 나팔꽃] 시논',
+        '[시원한 저녁놀의 싸리꽃] 스구하',
+        '[노래하는 백일홍] 세븐',
+        '[춤추듯 지는 벚꽃] 레인',
+    ]
+
+    step1 = Step()
+    step1.scout = scout
+    step1.name = '일반'
+    step1.is_first = True
+    step1.cost = 250
+    step1.cost_type = CostType.diamond
+
+    with sess.begin():
+        sess.add(scout)
+        sess.add(step1)
+
+
+def 유카타_NIGHT_스카우트_무기(sess):
+    scout = Scout()
+    scout.title = '유카타 NIGHT 스카우트'
+    scout.type = ScoutType.weapon
+    scout.s4_units = [
+        '麗刀・流れ柳 (세검)',
+        '妖刀・雅文の調べ × 雅文の奏で (쌍검)',
+        '祝槍・八重の繚乱 (창)',
+        '宝銃・咲くや朝霧 (총)',
+        '霊刀・萩の露 (단검)',
+    ]
+
+    step1 = Step()
+    step1.scout = scout
+    step1.name = '일반'
+    step1.is_first = True
+    step1.cost = 150
+    step1.cost_type = CostType.diamond
+
+    with sess.begin():
+        sess.add(scout)
+        sess.add(step1)
+
+
+def 인기_캐릭터_강화_앙케이트_스카우트_캐릭터(sess):
+    scout = Scout()
+    scout.title = '인기 캐릭터! 강화 앙케이트 스카우트'
+    scout.type = ScoutType.character
+    scout.s4_units = [
+        '[참영비검] 아스나',
+        '[인연의 제미니] 유우키',
+        '[섬광의 무도] 아스나',
+        '[천사의 성원] 유이',
+        '[초여름을 장식하는 처녀] 스구하',
+    ]
+
+    step1 = Step()
+    step1.scout = scout
+    step1.name = '일반'
+    step1.is_first = True
+    step1.cost = 250
+    step1.cost_type = CostType.diamond
+
+    with sess.begin():
+        sess.add(scout)
+        sess.add(step1)
+
+
+def 인기_캐릭터_강화_앙케이트_스카우트_무기(sess):
+    scout = Scout()
+    scout.title = '인기 캐릭터! 강화 앙케이트 스카우트'
+    scout.type = ScoutType.weapon
+    scout.s4_units = [
+        '인과의 법칙검+1',
+        '엔젤 클레이모어+1',
+        '제미니 그라디우스+1',
+        '피셔즈 소드+1',
+        '원스 어픈 어 타임+1',
+    ]
+
+    step1 = Step()
+    step1.scout = scout
+    step1.name = '일반'
+    step1.is_first = True
+    step1.cost = 150
+    step1.cost_type = CostType.diamond
+
+    with sess.begin():
+        sess.add(scout)
+        sess.add(step1)
+
+
+def 한여름의_트로피컬_드림_스카우트_캐릭터(sess):
+    scout = Scout()
+    scout.title = '한여름의 트로피컬★드림 스카우트'
+    scout.type = ScoutType.character
+    scout.s4_units = [
+        '[해변의 남국소년] 키리토',
+        '[여름의 연인] 아스나',
+        '[생기발랄 여름빛 소녀] 유우키',
+        '[파도 타는 소년] 유지오',
+        '[볼 빨간 여름의 프린세스] 앨리스',
+    ]
+
+    step1 = Step()
+    step1.scout = scout
+    step1.name = '일반'
+    step1.is_first = True
+    step1.cost = 250
+    step1.cost_type = CostType.diamond
+
+    with sess.begin():
+        sess.add(scout)
+        sess.add(step1)
+
+
+def 한여름의_트로피컬_드림_스카우트_무기(sess):
+    scout = Scout()
+    scout.title = '한여름의 트로피컬★드림 스카우트'
+    scout.type = ScoutType.weapon
+    scout.s4_units = [
+        '앵커즈 소드',
+        '다크 팜 소드 x 덴파레 슬라이서',
+        'ハイビスカスカッター(단검)',
+        'ビーチスティンガー (세검)',
+        'シーホースセイバー (한손검)',
+    ]
+
+    step1 = Step()
+    step1.scout = scout
+    step1.name = '일반'
+    step1.is_first = True
+    step1.cost = 150
+    step1.cost_type = CostType.diamond
+
+    with sess.begin():
+        sess.add(scout)
+        sess.add(step1)
+
+
+def 가속하는_리얼_스카우트_캐릭터(sess):
+    scout = Scout()
+    scout.title = '가속하는 리얼 스카우트'
+    scout.type = ScoutType.character
+    scout.s4_units = [
+        '[일어서는 영웅] 키리토',
+        '[맞서는 결의] 아스나',
+        '[어그멘트 테이머] 시리카',
+        '[이피션트 스미스] 리즈벳',
+        '[프로그레시브 거너] 시논',
+    ]
+
+    step1 = Step()
+    step1.scout = scout
+    step1.name = '일반'
+    step1.is_first = True
+    step1.cost = 250
+    step1.cost_type = CostType.diamond
+
+    with sess.begin():
+        sess.add(scout)
+        sess.add(step1)
+
+
+def 가속하는_리얼_스카우트_무기(sess):
+    scout = Scout()
+    scout.title = '가속하는 리얼 스카우트'
+    scout.type = ScoutType.weapon
+    scout.s4_units = [
+        '히로익 프로미스',
+        '컬리지',
+        '에레타',
+        '엣지 오브 리펜트',
+        '어드밴서',
+    ]
+
+    step1 = Step()
+    step1.scout = scout
+    step1.name = '일반'
+    step1.is_first = True
+    step1.cost = 150
+    step1.cost_type = CostType.diamond
+
+    with sess.begin():
+        sess.add(scout)
+        sess.add(step1)
+
+
 SCOUT: List[Tuple[str, ScoutType, Callable]] = [
     (
         '두근두근 수증기와 미인의 온천 스카우트',
@@ -1287,5 +1571,65 @@ SCOUT: List[Tuple[str, ScoutType, Callable]] = [
         '폭풍에 휘날리는 해적기 스카우트',
         ScoutType.weapon,
         폭풍에_휘날리는_해적기_스카우트_무기,
+    ),
+    (
+        '여름밤의 축제 스카우트',
+        ScoutType.character,
+        여름밤의_축제_스카우트_캐릭터,
+    ),
+    (
+        '여름밤의 축제 스카우트',
+        ScoutType.weapon,
+        여름밤의_축제_스카우트_무기,
+    ),
+    (
+        '매력분출 여름빛 소녀 스카우트',
+        ScoutType.character,
+        매력분출_여름빛_소녀_스카우트_캐릭터,
+    ),
+    (
+        '매력분출 여름빛 소녀 스카우트',
+        ScoutType.weapon,
+        매력분출_여름빛_소녀_스카우트_무기,
+    ),
+    (
+        '유카타 NIGHT 스카우트',
+        ScoutType.character,
+        유카타_NIGHT_스카우트_캐릭터,
+    ),
+    (
+        '유카타 NIGHT 스카우트',
+        ScoutType.weapon,
+        유카타_NIGHT_스카우트_무기,
+    ),
+    (
+        '인기 캐릭터! 강화 앙케이트 스카우트',
+        ScoutType.character,
+        인기_캐릭터_강화_앙케이트_스카우트_캐릭터,
+    ),
+    (
+        '인기 캐릭터! 강화 앙케이트 스카우트',
+        ScoutType.weapon,
+        인기_캐릭터_강화_앙케이트_스카우트_무기,
+    ),
+    (
+        '한여름의 트로피컬★드림 스카우트',
+        ScoutType.character,
+        한여름의_트로피컬_드림_스카우트_캐릭터,
+    ),
+    (
+        '한여름의 트로피컬★드림 스카우트',
+        ScoutType.weapon,
+        한여름의_트로피컬_드림_스카우트_무기,
+    ),
+    (
+        '가속하는 리얼 스카우트',
+        ScoutType.character,
+        가속하는_리얼_스카우트_캐릭터,
+    ),
+    (
+        '가속하는 리얼 스카우트',
+        ScoutType.weapon,
+        가속하는_리얼_스카우트_무기,
     ),
 ]
