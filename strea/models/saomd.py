@@ -42,7 +42,7 @@ class Player(Base):
 
     id = Column(Integer, primary_key=True)
 
-    user = Column(String(100), unique=True)
+    user = Column(String(10), unique=True)
 
     characters = Column(JSONType, default={}, nullable=False)
 
@@ -65,6 +65,8 @@ class Scout(Base):
     title = Column(String(100), nullable=False)
 
     type = Column(ChoiceType(ScoutType, impl=Integer()), nullable=False)
+
+    version = Column(Integer, server_default='1', default=1, nullable=False)
 
     s4_units = Column(JSONType, default=[], nullable=False)
 
