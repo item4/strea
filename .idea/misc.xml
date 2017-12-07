@@ -5,7 +5,7 @@
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7" />
   <component name="PhpUnit" load_method="PHPUNIT_PHAR" custom_loader_path="" phpunit_phar_path="$USER_HOME$/.composer/vendor/bin/phpunit" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" project-jdk-name="Python 3.6.2 virtualenv at ~/.virtualenvs/strea" project-jdk-type="Python SDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" default="false" project-jdk-name="Python 3.6.2 strea" project-jdk-type="Python SDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
